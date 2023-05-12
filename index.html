@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
+    <script src="https://kit.fontawesome.com/6f23470d40.js" crossorigin="anonymous"></script>
+</head>
+<body class="">
+    <header class="header">
+        <img src="svg/Logo_alura.svg" alt="">
+        <div class="switch" id="switch">
+            <span><i class="fa-solid fa-sun"></i></span>
+            <span><i class="fa-solid fa-moon"></i></span>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor-principal">
+            <textarea name="" id="textarea" cols="30" rows="10" onkeyup="textareaTiempoReal(this.value)" placeholder="Ingrese su texto"></textarea>
+            <p><img
+                src="svg/icon_informacion.svg"
+                alt="information" class="icon_informacion"/>   Solo minusculas y letras</p>
+            <div class="botones-principales">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <div class="contenedor-izquierdo">
+            <div class="sin-txt">
+                <img src="imagenes/Muñeco.png" alt="">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="con-txt">
+                <textarea name="" id="textarea-salida" cols="30" rows="10" readonly></textarea>
+                <button id="copiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="funcion_home.js"></script>
+</html>
